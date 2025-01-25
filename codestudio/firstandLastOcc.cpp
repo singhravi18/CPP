@@ -1,3 +1,6 @@
+# include <vector>
+using namespace std;
+
 int firstOcc (vector<int>& arr , int size , int key){
     int start = 0;
     int end = size - 1 ;

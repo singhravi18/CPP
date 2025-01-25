@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+using namespace std;
 
 vector<vector<int>> pairSum(vector<int> &arr, int s){
    
