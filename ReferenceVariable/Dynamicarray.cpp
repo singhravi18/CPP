@@ -23,4 +23,6 @@ int main (){
 
     cout << "the answer is " << ans << endl;
 
+    delete [] arr;
+
 }
