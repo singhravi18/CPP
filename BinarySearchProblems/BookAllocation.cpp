@@ -49,8 +49,8 @@ int allocateBooks (vector <int> &arr , int n , int m ){
 
 int main (){
     vector <int> arr = {2 , 1 , 3 , 4};
-    int n = 4 ;
-    int m = 2;
+    int numberOfBooks = 4 ; // n
+    int numberOfStudents = 2; // m
 
     int result = allocateBooks (arr , 4 , 2);
     cout << result;
