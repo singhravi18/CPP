@@ -29,14 +29,15 @@ bool isValid (vector <int> arr , int n , int m , int maxPagesAllowed){
 int allocateBooks (vector <int> &arr , int n , int m ){
     int start = *max_element(arr.begin(), arr.end()); 
     int end = accumulate (arr.begin(), arr.end() , 0);
+    int ans = -1 ;
 
     if (m > n){
         return -1 ;
     }
 
+    while (start <= end){
+ 
     int maxPagesAllowed = start + (end - start)/2;
-    int ans = -1 ;
-
     if (isValid (arr , n , m , maxPagesAllowed)){
         ans = maxPagesAllowed;
         end = maxPagesAllowed - 1;
@@ -44,6 +45,7 @@ int allocateBooks (vector <int> &arr , int n , int m ){
     else {
         start = maxPagesAllowed + 1 ;
     }
+}
     return ans;
 }
 
